@@ -17,10 +17,7 @@ header h2 {
 }
 
 .site-footer {
-	background-image: linear-gradient(
-		#cec8ff,
-		white
-	);
+	background-image: linear-gradient(#cec8ff, white);
 	padding: 20px 0;
 }
 /* Custom rule for a bootstrap override class */
@@ -28,12 +25,7 @@ header h2 {
 	padding: 30px;
 	/* Remove space between Jumbotron and Navbar */
 	margin: 0;
-	background-image: linear-gradient(
-		to right,
-		#5637dd,
-		#3046c5,
-		#60106b
-	);
+	background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
 	color: white;
 }
 /*Our Custom class that we created */
@@ -44,6 +36,5 @@ header h2 {
 }
 /*Navbar background*/
 .navbar {
-     background-color: #901CAD;
+	background-color: #901cad;
 }
-

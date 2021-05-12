@@ -39,17 +39,35 @@
 
 		<!--Header Start--> 
 		<header class="jumbotron jumbotron-fluid">
+
+
 			<div class="container">
 				<div class="row">
                     <div class="col-4 col-sm-3 col-md-2 align-self-center">
                         <img src="img/logo.png" class="img-fluid" />
                     </div>
+
 					<div class="col">
 						<h1>NuCamp</h1>
 						<h2>a better way to camp</h2>
 					</div>
+
+					
+
+					<div class="col-md-4 col-xl-2 mt-4">
+
+						<a class="btn btn-lg btn-info" href="#reserveForm">Reserve Campsite</a>
+						
+					</div>
+					
+
+
 				</div>
 			</div>
+
+
+
+
 		</header>
 
 		<!-- NavBar Component-->
@@ -119,6 +137,7 @@
 					<div class="col-sm-4 col-md-3">
 						<h2>Featured Campsites</h2>
 					</div>
+
 					<div class="col">
 						<div class="media">
 							<div class="media-body align-self-center">	
@@ -130,6 +149,7 @@
 							</div>
 							<img class="d-flex ml-3 img-thumbnail"src="img/react-lake-thumb.jpg"/></a>
 						</div>	
+
 					</div>
 				</div>
 
@@ -152,12 +172,64 @@
 					</div>
 		</div>
 
-		<!--New Section-->
+		<!--Reserve A Campsite-->
 		<div class="row row-content">
 
-			<div class="col-sm-6 mx-auto">
+			<div class="col-sm-6">
 
-		</div>
+				<div class="card">
+					<h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+
+					<div class="card-body">
+						<!--! Form Start-->
+						<form id="reserveForm">
+
+							<div class="form-group row">
+								<label for="numCampers" class="col-form-label col-sm-6 mx-auto">
+									Number Of Campers
+								</label>
+
+								<div class="col">
+								<select name="numCampers" id="numCampers" class="form-control">
+									<option>Select...</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+
+								</div>
+
+							</div>
+							
+							<div class="form-group row">
+
+								<label for="date" class="col-form-label col-sm-6">
+									Date
+								</label>
+                      
+								<div class="col">
+								<input type="date" name="date" id="date" placeholder="Enter Date" class="form-control"/>
+								</div>
+
+							</div>
+
+							<div class="form-group row">
+
+								<div class="col">
+									<button type='submit' class="btn btn-primary">Search</button>
+								</div>
+
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+
+			</div>
 
 		</div>
 
