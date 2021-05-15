@@ -39,9 +39,13 @@ header h2 {
 	background-color: #901cad;
 }
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(143, 125, 125, 0.5);
 }
 
 .carousel {
-    border: solid #5637DD;
+	border: solid #3046c5;
+}
+
+.carousel-item {
+	height: 350px;
 }

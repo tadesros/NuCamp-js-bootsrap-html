@@ -57,19 +57,94 @@
 					<!--ToolTip-->
 					<div class="col-md-4 col-xl-2 mt-4">
 
-						<a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
+						<a role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-lg btn-info">Reserve Campsite</a>
 						
 					</div>
 					
 
 
-				</div> <!-- /.row-->
-			</div> <!-- /.container -->
+				</div>  <!-- /.row -->
+			</div> <!--/.container -->
 
 
 
 
 		</header> <!--/.jumbotron -->
+
+
+		<!--Reserve Modal-->
+		<div class="modal" id="reserveModal" tabindex="-1" role="dialog">		
+  			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">					
+					<div class="modal-header bg-info text-white">
+						<h5 class="modal-title">Reserve a Campsite</h5>						 
+					</div>	<!--/.modal-header-->
+					<div class="modal-body">
+						<!--! Form Start-->
+						<form id="reserveForm">
+
+								<div class="form-group row">
+									<label for="numCampers" class="col-form-label col-sm-6">
+										Number Of Campers
+									</label>
+
+									<div class="col">
+									<select name="numCampers" id="numCampers" class="form-control">
+										<option>Select...</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+
+									</div>
+
+								</div>
+								
+								<div class="form-group row">
+
+									<label for="date" class="col-form-label col-sm-6">
+										Date
+									</label>
+						
+									<div class="col">
+									<input type="date" name="date" id="date" placeholder="Enter Date" class="form-control"/>
+									</div>
+
+								</div>
+
+								
+								<div class="form-group row">
+									<label for="date" class="col-form-label col-sm-6">
+										Campsite Type
+									</label>
+									<!--Radio Button Group-->
+									<div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">										
+											<label class="btn btn-primary active">
+												<input type="radio" name="options" id="siteTent" value="tent" autocomplete="off" checked> Tent
+											</label>
+											<label class="btn btn-success">
+												<input type="radio" name="options" id="siteRV" value="RV" autocomplete="off"> RV
+											</label>
+									</div><!--/.radio Button Group-->
+								</div> 
+
+
+								<div class="form-group row">
+
+									<div class="col">
+										<button type='submit' class="btn btn-primary  btn-secondary" data-dismiss="modal">Cancel</button>
+										<button type='submit' class="btn btn-primary">Search</button>
+									</div>
+
+								</div> 
+
+						</form> <!--/.reserveForm-->
+					</div> <!--/.modal-body-->
+		 		</div> <!--/.modal-content-->
+			</div> <!--/.modal-content-->										
+		</div> <!--/.modal-->
 
 		<!-- NavBar Component-->
 		<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
@@ -246,7 +321,7 @@
 					</div>
 		</div>
 
-		<!--Reserve A Campsite-->
+		<!--Reserve A Campsite--
 		<div class="row row-content">
 
 			<div class="col-sm-6 mx-auto">
@@ -254,8 +329,8 @@
 				<div class="card">
 					<h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
 
-					<div class="card-body">
-						<!--! Form Start-->
+					<class class="card-body">
+						<!--! Form Start--
 						<form id="reserveForm">
 
 							<div class="form-group row">
@@ -297,15 +372,15 @@
 
 							</div>
 
-						</form>
+						</form> 
 
 					</div>
 
 				</div>
 
 			</div>
-
 		</div>
+	-->
 
         <!-- Footer Start-->
 		<footer class="site-footer">
@@ -366,7 +441,7 @@
 		<!--JQUERY-->
 		<script>
 			$(function () {
-				$('[data-toggle="tooltip"]').tooltip()
+			    //
 			})
 		</script>
 
