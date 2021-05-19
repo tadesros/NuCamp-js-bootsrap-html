@@ -2,6 +2,7 @@ $(function () {
 	$(".carousel").carousel({ interval: 2000 });
 
 	$("#carouselButton").click(function () {
+
 		if ($("#carouselButton").children("i").hasClass("fa-pause")) {
 			$(".carousel").carousel("pause");
 			$("#carouselButton").children("i").removeClass("fa-pause");
@@ -12,4 +13,5 @@ $(function () {
 			$("#carouselButton").children("i").addClass("fa-pause");
 		}
 	});
+
 });
