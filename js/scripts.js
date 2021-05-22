@@ -21,11 +21,11 @@ $(function () {
 
 	//Click Event for Reserve Campsite
 	$("#reserveButton").click(function () {
-		$("#reserveModal").modal();
+		$("#reserveModal").modal("show");
 	});
 	//Click Event for Login Modal
 	$("#loginButton").click(function () {
-		$("#loginModal").modal();
+		$("#loginModal").modal("show");
 	});
 
 	
