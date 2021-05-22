@@ -17,10 +17,12 @@
 			rel="stylesheet"
 			href="node_modules/font-awesome/css/font-awesome.min.css"
 		/>
+<!----
 		<link
 			rel="stylesheet"
 			href="node_modules/bootstrap-social/bootstrap-social.css"
 		/>
+-->
 		<link rel="stylesheet" href="css/styles.css" />
 		<!-- endbuild -->
 
@@ -28,8 +30,6 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
 		/>
-
-
 
 		<title>NuCamp: A Better Way To Camp</title>
 	</head>
@@ -51,12 +51,14 @@
 						<h2>a better way to camp</h2>
 					</div>
 					
-					<!--Modal Button-->
+					<!--Modal Button Reserve Campsite-->
 					<div class="col-md-4 col-xl-2 mt-4">
 
-						<a role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-lg btn-info">Reserve Campsite</a>
+					<!---	<a role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-lg btn-info">Reserve Campsite</a> -->
+
+						<a role="button" id="reserveButton" class="btn btn-lg btn-info">Reserve Campsite</a>
 						
-					</div> <!--/.Modal Button-->
+					</div> <!--/.Modal Button Reserve Campsite-->
 
 				</div> <!-- /.row-->
 			</div> <!-- /.container -->
@@ -183,7 +185,12 @@
 					</ul>
 
 					<span class="navbar-text ml-auto">
+						<!---
 							<a role="button" data-toggle="modal" data-target="#loginModal">
+								<i class="fa fa-sign-in"></i> Login
+							</a>
+						-->
+							<a role="button" id="loginButton">
 								<i class="fa fa-sign-in"></i> Login
 							</a>
 					</span>
@@ -419,6 +426,7 @@
 		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
 		<!-- endbuild-->
 
 	</body>

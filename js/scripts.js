@@ -1,6 +1,11 @@
 $(function () {
+
+	
+
 	$(".carousel").carousel({ interval: 2000 });
 
+
+	//Click Event for Carousel Button
 	$("#carouselButton").click(function () {
 
 		if ($("#carouselButton").children("i").hasClass("fa-pause")) {
@@ -13,5 +18,21 @@ $(function () {
 			$("#carouselButton").children("i").addClass("fa-pause");
 		}
 	});
+
+
+    //Click Events
+
+	//Click Event for Reserve Campsite
+	$("#reserveButton").click(function () {
+		alert("reserveButton");
+	});
+	//Click Event for Login Modal
+	$("#loginButton").click(function () {
+
+		alert("LoginButton");
+
+	});
+
+
 
 });
