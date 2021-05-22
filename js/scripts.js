@@ -1,9 +1,6 @@
 $(function () {
 
-	
-
 	$(".carousel").carousel({ interval: 2000 });
-
 
 	//Click Event for Carousel Button
 	$("#carouselButton").click(function () {
@@ -20,19 +17,16 @@ $(function () {
 	});
 
 
-    //Click Events
+    //!--Click Events--
 
 	//Click Event for Reserve Campsite
 	$("#reserveButton").click(function () {
-		alert("reserveButton");
+		$("#reserveModal").modal();
 	});
 	//Click Event for Login Modal
 	$("#loginButton").click(function () {
-
-		alert("LoginButton");
-
+		$("#loginModal").modal();
 	});
 
-
-
+	
 });
